@@ -3,6 +3,7 @@ require 'spec_helper'
 require "logstash/filters/collapse"
 
 describe LogStash::Filters::Collapse do
+
   describe "Test Map Fields" do
     let(:config) do <<-CONFIG
       filter {
@@ -64,6 +65,28 @@ describe LogStash::Filters::Collapse do
       expect(subject).not_to include("level_field")
       expect(subject).to include("another_field")
       expect(subject['another_field']).to eq(['valueB'])
+    end
+
+    sample("level_a" => {"level_b" => {"level_c" => "valueA"}}) do
+      expect(subject).not_to include("level_field")
+    end
+
+  end
+
+  describe "Test Array of values" do
+    let(:config) do <<-CONFIG
+      filter {
+        collapse {
+          map_fields => { "[level_a][level_b]" => "level_field"}
+          multi_valued => false
+        }
+      }
+    CONFIG
+    end
+
+    sample("level_a" => {"level_b" => ["valueA","valueB"]}) do
+      expect(subject).to include("level_field")
+      expect(subject['level_field']).to eq(['valueA','valueB'])
     end
 
   end
