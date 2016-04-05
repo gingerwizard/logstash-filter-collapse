@@ -90,4 +90,23 @@ describe LogStash::Filters::Collapse do
     end
 
   end
+
+
+  describe "Test Same Fields" do
+    let(:config) do <<-CONFIG
+      filter {
+        collapse {
+          map_fields => { "[level_a][level_b][level_c]" => "level_field" "[level_a][level_d][level_e]" => "level_field"}
+          multi_valued => false
+        }
+      }
+    CONFIG
+    end
+
+    sample("level_a" => {"level_b" => [{"level_c" => "valueA"},{"level_c" => "valueB"}],"level_d" => [{"level_e" => "valueC"}]}) do
+      expect(subject).to include("level_field")
+      expect(subject['level_field']).to eq(['valueA','valueB',"valueC"])
+    end
+
+  end
 end

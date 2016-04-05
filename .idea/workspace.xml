@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993c846b-7864-4844-a7e7-32087333dbc5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logstash-filter-collapse-0.1.0.gem" afterPath="$PROJECT_DIR$/logstash-filter-collapse-0.1.0.gem" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/logstash/filters/collapse.rb" afterPath="$PROJECT_DIR$/lib/logstash/filters/collapse.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/filters/collapse_spec.rb" afterPath="$PROJECT_DIR$/spec/filters/collapse_spec.rb" />
     </list>
@@ -26,21 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="collapse.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="collapse.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/logstash/filters/collapse.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="collapse_spec.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="collapse_spec.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/filters/collapse_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="1255">
+              <caret line="107" column="69" selection-start-line="107" selection-start-column="69" selection-end-line="107" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -101,8 +102,8 @@
       <list>
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/logstash-filter-collapse.gemspec" />
-        <option value="$PROJECT_DIR$/lib/logstash/filters/collapse.rb" />
         <option value="$PROJECT_DIR$/spec/filters/collapse_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/logstash/filters/collapse.rb" />
       </list>
     </option>
   </component>
@@ -823,12 +824,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1459875218594</updated>
-      <workItem from="1459875222730" duration="13044000" />
+      <workItem from="1459875222730" duration="14366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13044000" />
+    <option name="totallyTimeSpent" value="14366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="977" extended-state="6" />
@@ -886,14 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logstash-filter-collapse.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -902,18 +895,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/logstash/filters/collapse.rb">
+    <entry file="file://$PROJECT_DIR$/logstash-filter-collapse.gemspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/filters/collapse_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="1255">
+          <caret line="107" column="69" selection-start-line="107" selection-start-column="69" selection-end-line="107" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/logstash/filters/collapse.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
           <folding />
         </state>
       </provider>

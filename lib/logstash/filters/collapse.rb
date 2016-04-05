@@ -35,7 +35,12 @@ class LogStash::Filters::Collapse < LogStash::Filters::Base
       fields = src_fields.split('][')
       values = read_field(event,fields)
       unless values.empty?
-        event[dest_field]=values
+        if event[dest_field].nil?
+          event[dest_field]=values
+        else
+          event[dest_field]=event[dest_field]+values
+        end
+
       end
     end
     # filter_matched should go in the last line of our successful code
